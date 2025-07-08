@@ -174,7 +174,7 @@ h2.section-title {
 }
 
 .portfolio span {
-  color: #4e54c8;
+  color: #454cca;
 }
 
 .project-grid {
@@ -210,14 +210,14 @@ h2.section-title {
 
 .project-card p {
   font-size: 0.9rem;
-  color: #555;
+  color: #2b2828;
   margin-bottom: 1rem;
 }
 
 .project-card a {
   display: inline-block;
   padding: 0.5rem 1rem;
-  background: #4e54c8;
+  background: #060607;
   color: rgb(255, 255, 255);
   border-radius: 20px;
   text-decoration: none;
