@@ -1,205 +1,602 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Yuvraj Dixit - Web Developer & Tech Creator Portfolio" />
-  <meta name="author" content="Yuvraj Dixit" />
-<title>Yuvraj Dixit | Web Developer & DevOps Engineer</title>
-<meta name="description" content="Official portfolio of Yuvraj Dixit (Yuvii) – showcasing web development projects, skills, resume, and contact info.">
-<meta name="keywords" content="Yuvraj Dixit, Yuviidxt, Web Developer, Portfolio, Frontend Developer, GitHub, HTML CSS JavaScript">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Yuvraj Dixit — Web Developer and Data Analyst.">
 <meta name="author" content="Yuvraj Dixit">
+<meta name="keywords" content="Yuvraj Dixit, Yuvii, Web Developer, Data Analyst, Python, Power BI, SQL, JavaScript, GitHub">
 <meta name="robots" content="index, follow">
-<meta name="google-site-verification" content="ioPg-1WWW_df67cWWyNK834EKBXGyPUWy3gtyq6Aa_Y" />
-
-
-  <!-- Font Awesome CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet" />
-
-  <!-- CSS File -->
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png" />
+<meta name="theme-color" content="#050816">
+<meta property="og:title" content="Yuvraj Dixit | Digital Portfolio">
+<meta property="og:description" content="Web development and Data Analytics projects.">
+<meta property="og:type" content="website">
+<title>Yuvraj Dixit | Web Developer × Data Analyst</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<div class="progress" id="progress"></div>
+<canvas id="particles" aria-hidden="true"></canvas>
+<div class="orb orb-a" aria-hidden="true"></div>
+<div class="orb orb-b" aria-hidden="true"></div>
 
-  <header>
-    <h1>Yuvii</h1>
-    <nav>
-      <a href="#home">Home</a>
+<aside class="side-rail" aria-label="Social links">
+  <a href="https://github.com/yuvii12" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+  <a href="https://linkedin.com/in/yuvrajdixit" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+  <a href="https://www.instagram.com/mr_yuvraj_dixit__/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+  <a href="mailto:dixitji017@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+  <span class="rail-line" aria-hidden="true"></span>
+</aside>
+
+<header class="header" id="header">
+  <div class="nav-wrap">
+    <a class="brand" href="#home" aria-label="Yuvraj Dixit home">
+      <span class="brand-signature">Yuvii</span>
+      <small>YUVRAJ DIXIT</small>
+    </a>
+    <nav class="nav" id="nav" aria-label="Primary navigation">
+      <a href="#home" class="active">Home</a>
       <a href="#about">About</a>
-      <a href="#portfolio">Portfolio</a>
       <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="education.html">Education</a>
       <a href="#contact">Contact</a>
     </nav>
-  </header>
+    <div class="nav-actions">
+      <a class="btn primary btn-cv" href="images/Yuvraj_Dixit_resume.pdf" download><i class="fa-solid fa-download"></i> Download CV</a>
+      <button class="icon-btn" id="commandBtn" aria-label="Open command palette">
+        <i class="fa-solid fa-terminal"></i>
+      </button>
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </div>
+</header>
 
-  <section class="hero" id="home">
-    <div class="intro">
-      <h3>Hello, I'm</h3>
-      <h1>Yuvraj Dixit</h1>
-      <p>Web Developer | YouTuber | Creator</p>
-      <br>
-      <p>
-        I'm <strong>Yuvraj Dixit</strong> — but most know me as <strong>Yuvii</strong>.
-        <br> I'm a web developer , YouTuber, and creator who loves building things and sharing knowledge with others.
-        <br> I'm passionate about creating innovative solutions and making a positive impact.
-        <br> I'm always looking for new challenges and opportunities to grow.
-        <br> I'm excited to share my journey with you and explore the possibilities together.
-        <br> Let's connect and make something amazing!
+<main id="main-content">
+
+<section class="hero section" id="home">
+  <div class="container hero-grid">
+    <div class="hero-copy reveal">
+      <span class="eyebrow"><span class="wave">👋</span> Hi, I'm</span>
+      <h1>Yuvraj<br><span class="gradient">Dixit</span> <span class="hero-signature">Yuvii</span></h1>
+      <p class="typing-line"><span id="typed">Web Developer</span><span class="cursor">|</span></p>
+      <p class="hero-text">
+        I build modern, responsive websites and extract insights from data
+        to create impactful solutions. Passionate about technology,
+        automation and continuous learning.
       </p>
-      
-      <a href="images/Yuvraj_Dixit_resume.pdf" class="button">Download CV</a>
+      <div class="actions">
+        <a class="btn primary" href="#projects"><i class="fa-solid fa-rocket"></i> Explore My Work</a>
+        <a class="btn secondary" href="#contact"><i class="fa-solid fa-envelope"></i> Get In Touch</a>
+      </div>
+      <div class="hero-stats">
+        <div><span class="hs-icon"><i class="fa-solid fa-code"></i></span><span class="hs-num"><strong data-count="15">0</strong>+</span><small>Projects<br>Completed</small></div>
+        <div><span class="hs-icon"><i class="fa-solid fa-chart-line"></i></span><span class="hs-num"><strong data-count="3">0</strong></span><small>Data Analytics<br>Projects</small></div>
+        <div><span class="hs-icon"><i class="fa-solid fa-trophy"></i></span><span class="hs-num"><strong data-count="10">0</strong>+</span><small>Certifications<br>Earned</small></div>
+        <div><span class="hs-icon"><i class="fa-solid fa-users"></i></span><span class="hs-num"><strong data-count="1" data-display="1K">0</strong>+</span><small>Lines of Code<br>(this month)</small></div>
+      </div>
     </div>
-    <div class="profile-img">
-      <img src="images/1stpicture.jpg" alt="Yuvraj Dixit" loading="lazy" />
+
+    <div class="hero-art reveal">
+      <div class="profile-orbit"></div>
+      <div class="profile-card" id="profileCard">
+        <img src="images/1stpicture.jpg" alt="Yuvraj Dixit" loading="eager">
+        <div class="profile-overlay"></div>
+      </div>
+      <div class="code-badge"><i class="fa-solid fa-code"></i></div>
+      <div class="explore-card float-card">
+        <div class="explore-top"><span class="status-dot"></span> Currently Exploring</div>
+        <strong>Data Analytics</strong>
+        <ul>
+          <li>Python</li>
+          <li>Power BI</li>
+          <li>SQL</li>
+          <li>Data Visualization</li>
+        </ul>
+        <svg class="explore-chart" viewBox="0 0 140 46" aria-hidden="true">
+          <polyline points="0,34 16,26 32,30 48,18 64,22 80,10 96,16 112,6 128,12 140,2" fill="none" stroke="url(#sparkGrad)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          <defs><linearGradient id="sparkGrad" x1="0" y1="0" x2="140" y2="0"><stop offset="0" stop-color="#7c3aed"/><stop offset="1" stop-color="#67e8f9"/></linearGradient></defs>
+        </svg>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="about" id="about">
-    <h2 class="section-title">About Me</h2>
-   <p>
-      Hey there, I'm <strong>Yuvraj Dixit</strong> — but most know me as <strong>Yuvii</strong>. I'm a full-stack web developer and DevOps engineer 
-      who believes in clean code, automation magic, and the poetic symmetry of a well-executed deployment.
-    </p>
-    <p>
-      From frontend finesse to backend wizardry, and CI/CD pipelines to cloud ops — I do it all. I blend old-school discipline with 
-      new-age tech stacks to deliver results that are fast, reliable, and just work.
-    </p>
-    <p>
-      Off-code, I’m a YouTuber creating content on digital growth, money, and mindset — all under my channel <strong>Vlogii by Yuvii</strong>.
-    </p>
-    <p>
-      Always curious. Always building. Let’s connect.
-    </p>
-    <a href="education.html" class="button">Eductaion </a>
-    <a href="certificates.html" class="button">certifications </a>
-
- <!-- <section id="skills">
-    <h2 class="section-title">Skills</h2>
-    <ul class="skills-list"> 
-
-      <li>HTML, CSS, JavaScript</li>
-      <li>React.js & Tailwind CSS</li>
-      <li>Node.js & Express.js</li>
-      <li>MongoDB & MySQL</li>
-      <li>Docker, Jenkins, Git</li>
-      <li>CI/CD Pipelines</li>
-    </ul>-->
-
-  </section>
-
- <section id="skills">
+<section class="section" id="about">
   <div class="container">
-    <h2 class="section-title">Technical <span>Skills</span></h2>
-
-    <div class="skill">
-      <span class="skill-name"><i class="fab fa-html5"></i> HTML</span>
-      <div class="skill-bar-container">
-        <div class="skill-bar" style="width: 85%;"></div>
-      </div>
-      <span class="skill-percentage">85%</span>
+    <div class="heading reveal">
+      <span>01 / ABOUT ME</span>
+      <h2>Building Digital Solutions &amp; Analyzing Real World Data.</h2>
+      <p>I'm a passionate developer and data enthusiast who loves turning ideas into real world applications and meaningful insights. I enjoy working with modern web technologies, automating workflows and exploring data to solve problems.</p>
     </div>
-
-    <div class="skill">
-      <span class="skill-name"><i class="fab fa-css3-alt"></i> CSS</span>
-      <div class="skill-bar-container">
-        <div class="skill-bar" style="width: 82%;"></div>
-      </div>
-      <span class="skill-percentage">82%</span>
+    <div class="about-grid">
+      <article class="glass quote-card reveal">
+        <div>
+          <div class="quote">“Clean code, curious thinking, and one more insight to uncover.”</div>
+          <p>I like projects where design, engineering and data meet. I care about responsive UI, readable code, automation and learning by actually building things.</p>
+        </div>
+        <div class="facts">
+          <div><small>Role</small><strong>Web Developer</strong></div>
+          <div><small>Direction</small><strong>Data Analytics</strong></div>
+          <div><small>Learning</small><strong>Python + SQL + Power BI</strong></div>
+          <div><small>Creator</small><strong>Vlogii by Yuvii</strong></div>
+        </div>
+      </article>
+      <article class="glass about-copy reveal">
+        <h3>Who is Yuvii?</h3>
+        <p>Hey there, I'm Yuvraj Dixit, but most people know me as Yuvii. I am focused on web development while steadily moving deeper into data analytics — turning raw datasets into clear, business-ready insights.</p>
+        <p>I enjoy learning technologies by creating real projects rather than only reading theory. Every project gives me another opportunity to improve problem solving, UI thinking, data storytelling and engineering discipline.</p>
+        <p>Outside coding, I am interested in creating content around digital growth, money and mindset through Vlogii by Yuvii.</p>
+        <div class="about-badges">
+          <span><i class="fa-solid fa-code"></i> Clean Code</span>
+          <span><i class="fa-solid fa-trophy"></i> Problem Solver</span>
+          <span><i class="fa-solid fa-users"></i> Team Player</span>
+          <span><i class="fa-solid fa-bolt"></i> Fast Learner</span>
+        </div>
+        <div class="actions">
+          <a class="btn secondary" href="education.html"><i class="fa-solid fa-graduation-cap"></i> Education</a>
+          <a class="btn secondary" href="certificates.html"><i class="fa-solid fa-certificate"></i> Certifications</a>
+        </div>
+      </article>
     </div>
-
-    <div class="skill">
-      <span class="skill-name"><i class="fab fa-js"></i> JavaScript</span>
-      <div class="skill-bar-container">
-        <div class="skill-bar" style="width: 80%;"></div>
-      </div>
-      <span class="skill-percentage">40%</span>
-    </div>
-
-    <div class="skill">
-      <span class="skill-name"><i class="fab fa-java"></i> Java</span>
-      <div class="skill-bar-container">
-        <div class="skill-bar" style="width: 90%;"></div>
-      </div>
-      <span class="skill-percentage">40%</span>
-    </div>
-
-    <div class="skill">
-      <span class="skill-name"><i class="fab fa-python"></i> Python</span>
-      <div class="skill-bar-container">
-        <div class="skill-bar" style="width: 90%;"></div>
-      </div>
-      <span class="skill-percentage">70%</span>
-    </div>
-  </div>
-  <div class="skill">
-      <span class="skill-name"><i class="fab fa-c "></i> C</span>
-      <div class="skill-bar-container">
-        <div class="skill-bar" style="width: 90%;"></div>
-      </div>
-      <span class="skill-percentage">70%</span>
+    <div class="metrics reveal">
+      <div><strong data-count="10">0</strong><span>Technologies explored</span></div>
+      <div><strong data-count="6">0</strong><span>Featured projects</span></div>
+      <div><strong data-count="5">0</strong><span>Learning tracks</span></div>
+      <div><strong data-count="100">0</strong><span>% Curiosity</span></div>
     </div>
   </div>
 </section>
 
-
-     <section id="portfolio" class="portfolio">
-  <h2>My <span>Projects</span></h2>
-  <div class="project-grid">
-    <div class="project-card">
-      <img src="images/project1.jpg" alt="Responsive frontend developer project by Yuvraj Dixit">
-      <h3> Portfolio website</h3>
-      <p>A clean, mobile-friendly portfolio website built using HTML, CSS, and animations.</p>
-      <a href="https://yuvii12.github.io/Portfolio-website/" target="_blank">View Code</a>
+<section class="section alt" id="skills">
+  <div class="container">
+    <div class="heading reveal">
+      <span>02 / SKILLS</span>
+      <h2>Tools I use to turn ideas &amp; data into products.</h2>
+      <p>Visual indicators represent areas I am currently practicing and growing, not professional certification scores.</p>
     </div>
-
-    <div class="project-card">
-      <img src="images/project2.jpg" alt="Responsive frontend developer project by Yuvraj Dixit">
-      <h3>Weather App</h3>
-      <p>A real-time weather checker app using JavaScript and OpenWeatherMap API.</p>
-      <a href="#">Live Demo</a>
+    <div class="skills-grid">
+      <aside class="glass skill-intro reveal">
+        <h3>My learning stack</h3>
+        <p>I am building a broad foundation across frontend development, programming, databases, data analytics and visualization.</p>
+        <div class="pills">
+          <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Python</span>
+          <span>SQL</span><span>Power BI</span><span>Pandas</span><span>NumPy</span>
+          <span>Matplotlib</span><span>Scikit-learn</span><span>Excel</span><span>Git</span>
+          <span>GitHub</span><span>MySQL</span>
+        </div>
+      </aside>
+      <div class="skill-list stagger reveal">
+        <div class="skill-row">
+          <div class="skill-top"><strong><i class="fa-brands fa-html5"></i> HTML</strong><span>85%</span></div>
+          <div class="track"><div class="fill" style="--level:0.85"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-top"><strong><i class="fa-brands fa-css3-alt"></i> CSS</strong><span>82%</span></div>
+          <div class="track"><div class="fill" style="--level:0.82"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-top"><strong><i class="fa-brands fa-js"></i> JavaScript</strong><span>70%</span></div>
+          <div class="track"><div class="fill" style="--level:0.7"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-top"><strong><i class="fa-brands fa-python"></i> Python</strong><span>75%</span></div>
+          <div class="track"><div class="fill" style="--level:0.75"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-top"><strong><i class="fa-solid fa-database"></i> SQL / Databases</strong><span>68%</span></div>
+          <div class="track"><div class="fill" style="--level:0.68"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-top"><strong><i class="fa-solid fa-chart-simple"></i> Power BI</strong><span>62%</span></div>
+          <div class="track"><div class="fill" style="--level:0.62"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-top"><strong><i class="fa-solid fa-file-excel"></i> Excel / OpenPyXL</strong><span>72%</span></div>
+          <div class="track"><div class="fill" style="--level:0.72"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-top"><strong><i class="fa-brands fa-git-alt"></i> Git &amp; GitHub</strong><span>75%</span></div>
+          <div class="track"><div class="fill" style="--level:0.75"></div></div>
+        </div>
+      </div>
     </div>
-
-    <div class="project-card">
-      <img src="images/project3.jpg" alt="Responsive frontend developer project by Yuvraj Dixit">
-      <h3>To-Do List</h3>
-      <p>Simple to-do app with local storage and task filters made with vanilla JS.</p>
-      <a href="#">GitHub Repo</a>
-    </div>
-</div>
+  </div>
 </section>
 
+<section class="section" id="projects">
+  <div class="container">
+    <div class="heading reveal">
+      <span>03 / PROJECTS</span>
+      <h2>Web development meets data analytics.</h2>
+      <p>My portfolio highlights both software projects and practical data analytics work — from cleaning datasets and visualizing trends to building regression models and extracting business insights.</p>
+    </div>
+    <div class="project-toolbar reveal">
+      <div class="filters" id="filters">
+        <button class="filter active" data-filter="all">All</button><button class="filter" data-filter="web">Web</button><button class="filter" data-filter="javascript">JavaScript</button><button class="filter" data-filter="analytics">Data Analytics</button><button class="filter" data-filter="python">Python / ML</button>
+      </div><span id="projectCount">6 projects</span>
+    </div>
+    <div class="projects stagger reveal" id="projectsGrid">
+      <article class="project project-item" data-category="web"><div class="project-image"><b>01</b><div class="project-visual"><i class="fa-solid fa-code"></i><span>PORTFOLIO</span></div></div><div class="project-body"><h3>Yuvii Portfolio</h3><p>Modern responsive portfolio with animated UI, project storytelling, interactive filtering and GitHub Pages compatibility.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Animation</span></div><div class="project-actions"><a href="https://yuvii12.github.io/Portfolio-website/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a><button class="details" data-project="portfolio"><i class="fa-solid fa-circle-info"></i> Details</button></div></div></article>
+      <article class="project project-item" data-category="javascript"><div class="project-image"><b>02</b><div class="project-visual"><i class="fa-solid fa-cloud-sun"></i><span>WEATHER APP</span></div></div><div class="project-body"><h3>Weather App</h3><p>JavaScript learning project focused on API data, asynchronous requests, loading states and responsive interface design.</p><div class="tags"><span>JavaScript</span><span>API</span><span>Async</span><span>UI</span></div><div class="project-actions"><a href="#" class="placeholder-link"><i class="fa-solid fa-cloud-sun"></i> Demo</a><button class="details" data-project="weather"><i class="fa-solid fa-circle-info"></i> Details</button></div></div></article>
+      <article class="project project-item" data-category="javascript"><div class="project-image"><b>03</b><div class="project-visual"><i class="fa-solid fa-list-check"></i><span>TO-DO</span></div></div><div class="project-body"><h3>To-Do List</h3><p>Productivity app for practicing CRUD operations, task filtering, browser LocalStorage and interactive JavaScript UI.</p><div class="tags"><span>JavaScript</span><span>LocalStorage</span><span>CRUD</span><span>UI</span></div><div class="project-actions"><a href="#" class="placeholder-link"><i class="fa-brands fa-github"></i> Repo</a><button class="details" data-project="todo"><i class="fa-solid fa-circle-info"></i> Details</button></div></div></article>
+      <article class="project project-item" data-category="analytics"><div class="project-image"><b>04</b><div class="project-visual analytics-visual"><i class="fa-solid fa-users-viewfinder"></i><span>HR ANALYTICS</span></div></div><div class="project-body"><h3>HR Employee Attrition Analysis</h3><p>HR analytics project analyzing employee attrition, department trends, job roles, overtime, salary and satisfaction to generate business insights.</p><div class="tags"><span>Python</span><span>Pandas</span><span>Matplotlib</span><span>EDA</span><span>Jupyter</span></div><div class="project-actions"><a href="https://github.com/yuvii12/HR_Employee_Attrition_Analyasis" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a><button class="details" data-project="hr"><i class="fa-solid fa-chart-column"></i> Case Study</button></div></div></article>
+      <article class="project project-item" data-category="python"><div class="project-image"><b>05</b><div class="project-visual analytics-visual"><i class="fa-solid fa-house-chimney"></i><span>REAL ESTATE ML</span></div></div><div class="project-body"><h3>Real Estate Price Prediction</h3><p>Machine learning workflow using housing features and Linear Regression to predict residential property prices and evaluate model performance.</p><div class="tags"><span>Python</span><span>Scikit-learn</span><span>Regression</span><span>NumPy</span><span>Pandas</span></div><div class="project-actions"><a href="https://github.com/yuvii12/RealEstatePricePrediction" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a><button class="details" data-project="realestate"><i class="fa-solid fa-chart-line"></i> Case Study</button></div></div></article>
+      <article class="project project-item" data-category="analytics"><div class="project-image"><b>06</b><div class="project-visual analytics-visual"><i class="fa-solid fa-graduation-cap"></i><span>STUDENT ANALYSIS</span></div></div><div class="project-body"><h3>Student Result Analysis</h3><p>Analytics project calculating total and average marks, high/low scores, student and subject performance, pass/fail status and charts.</p><div class="tags"><span>Python</span><span>Pandas</span><span>Matplotlib</span><span>Excel</span><span>OpenPyXL</span></div><div class="project-actions"><a href="https://github.com/yuvii12/Student-Result-Analysis" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a><button class="details" data-project="student"><i class="fa-solid fa-chart-column"></i> Case Study</button></div></div></article>
+    </div>
+    <div class="glass analytics-highlight reveal" style="margin-top:24px;padding:24px;"><span style="color:#67e8f9;font-size:11px;font-weight:800;letter-spacing:.16em;">DATA ANALYTICS TRACK</span><h3 style="font-family:'Space Grotesk';font-size:26px;margin-top:8px;">From raw data → analysis → insight.</h3><p style="color:#94a3b8;line-height:1.8;max-width:800px;margin-top:8px;">These projects demonstrate practical work with data cleaning, preprocessing, descriptive analysis, visualization and introductory predictive modeling. The portfolio communicates the business question, technical workflow and insight behind each project.</p><div class="tags" style="margin-top:14px;"><span>Data Cleaning</span><span>EDA</span><span>Visualization</span><span>Statistics</span><span>Machine Learning</span></div></div>
+  </div>
+</section>
 
-  
+<section class="section alt" id="experience">
+  <div class="container">
+    <div class="heading reveal">
+      <span>04 / EXPERIENCE</span>
+      <h2>Learning is part of the portfolio.</h2>
+      <p>Education, internships, simulations and certifications are all steps in the same direction: becoming a stronger developer and analyst.</p>
+    </div>
+    <div class="timeline stagger reveal">
+      <article class="timeline-item"><i></i><div class="glass timeline-card"><div><h3>Diploma in Computer Science</h3><small>IIMT University, Greater Noida</small></div><b>2023 — 2026</b><p>Final-year journey focused on computer science foundations, programming and practical development.</p></div></article>
+      <article class="timeline-item"><i></i><div class="glass timeline-card"><div><h3>Web Development Internships</h3><small>CodSoft + Elevate Labs</small></div><b>Hands-on</b><p>Practical exposure to web development workflows, project delivery, Git-based work and professional learning environments.</p></div></article>
+      <article class="timeline-item"><i></i><div class="glass timeline-card"><div><h3>Software &amp; Data Simulations</h3><small>Accenture + Deloitte</small></div><b>Simulations</b><p>Job simulation experiences covering software engineering and data analytics style problem solving.</p></div></article>
+      <article class="timeline-item"><i></i><div class="glass timeline-card"><div><h3>Next Target: Data Analytics Mastery</h3><small>Python • SQL • Power BI</small></div><b>Next</b><p>Deepening practical knowledge of data cleaning, statistics, dashboards, SQL querying and business-focused insight generation.</p></div></article>
+    </div>
+  </div>
+</section>
 
-  <section id="contact">
-     <h2 class="section-title">Contact Me</h2>
+<section class="section" id="services">
+  <div class="container">
+    <div class="heading reveal">
+      <span>05 / WHAT I BUILD</span>
+      <h2>From a blank screen to a working insight.</h2>
+      <p>The following areas represent the kind of work I want this portfolio to communicate to recruiters, collaborators and clients.</p>
+    </div>
+    <div class="services stagger reveal">
+      <article class="glass service"><div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div><h3>Frontend Experiences</h3><p>Responsive interfaces with semantic HTML, modern CSS, JavaScript, interaction design and attention to performance.</p></article>
+      <article class="glass service"><div class="service-icon"><i class="fa-solid fa-chart-line"></i></div><h3>Data Analytics &amp; Insights</h3><p>Cleaning, exploring and visualizing data with Python, Pandas and Power BI to turn numbers into decisions.</p></article>
+      <article class="glass service"><div class="service-icon"><i class="fa-brands fa-python"></i></div><h3>Data &amp; Python</h3><p>Building a stronger foundation in Python, data handling, analytics, visualization and problem solving.</p></article>
+      <article class="glass service"><div class="service-icon"><i class="fa-solid fa-mobile-screen"></i></div><h3>Responsive Design</h3><p>Layouts that adapt cleanly across desktop, tablet and mobile without sacrificing hierarchy or usability.</p></article>
+      <article class="glass service"><div class="service-icon"><i class="fa-brands fa-github"></i></div><h3>Version Control</h3><p>Organizing projects with Git and GitHub so development stays traceable, shareable and easier to maintain.</p></article>
+      <article class="glass service"><div class="service-icon"><i class="fa-solid fa-lightbulb"></i></div><h3>Learning Projects</h3><p>Small focused applications that convert a concept into code and create a measurable next step in the learning journey.</p></article>
+    </div>
+    <div class="career glass reveal">
+      <h3>Current mission: become dangerous with the fundamentals.</h3>
+      <p>I am focusing on strong fundamentals before chasing every new tool. The roadmap is simple: write better code, understand data, automate repetitive work, sharpen analytics skills and ship more projects.</p>
+      <div class="career-tags"><span>Python</span><span>Pandas</span><span>SQL</span><span>Power BI</span><span>Excel</span><span>Statistics</span><span>Data Visualization</span><span>Machine Learning</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="contact">
+  <div class="container">
+    <div class="heading reveal">
+      <span>06 / CONTACT</span>
+      <h2>Let's build something worth showing.</h2>
+      <p>Have a project, internship opportunity, collaboration idea or simply want to talk tech and data? Send a message.</p>
+    </div>
+    <div class="contact-grid">
+      <article class="glass contact-card reveal">
+        <h3>Connect with Yuvii.</h3>
+        <p>The easiest way to know what I am building is to follow the work, connect on professional platforms or send a direct message.</p>
+        <div class="contact-list">
+          <a href="mailto:dixitji017@gmail.com"><i class="fa-solid fa-envelope"></i> dixitji017@gmail.com</a>
+          <a href="https://github.com/yuvii12" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> github.com/yuvii12</a>
+          <a href="https://linkedin.com/in/yuvrajdixit" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> linkedin.com/in/yuvrajdixit</a>
+          <a href="https://www.instagram.com/mr_yuvraj_dixit__/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i> @mr_yuvraj_dixit__</a>
+        </div>
+      </article>
+      <article class="glass contact-card reveal">
+        <form action="https://formspree.io/f/myzjgrvb" method="POST" id="contactForm">
+          <label for="name">YOUR NAME</label>
+          <input id="name" name="name" type="text" placeholder="Enter your name" required>
+          <label for="email">YOUR EMAIL</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required>
+          <label for="message">MESSAGE</label>
+          <textarea id="message" name="message" placeholder="Tell me what you're building..." required></textarea>
+          <p id="formStatus" class="status" aria-live="polite"></p>
+          <button class="btn primary" type="submit"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+        </form>
+      </article>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> Yuvraj Dixit. Built with curiosity, code and caffeine.</p>
     <div class="socials">
-      <a href="https://github.com/yuvii12" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://linkedin.com/in/yuvrajdixit" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://www.facebook.com/mryuvrajdixit" target="_blank"><i class="fab fa-facebook"></i></a>
-       <a href="https://www.instagram.com/mr_yuvraj_dixit__/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/yuvii12" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://linkedin.com/in/yuvrajdixit" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://www.facebook.com/mryuvrajdixit" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.instagram.com/mr_yuvraj_dixit__/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
     </div>
- 
+  </div>
+</footer>
 
-   
-    <form action="https://formspree.io/f/myzjgrvb" method="POST" class="footer__form">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-  <footer>
-    <p>&copy; 2025 Yuvraj Dixit. All rights reserved.</p>
-  </footer>
+<div class="modal" id="modal">
+  <div class="modal-card glass" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-head"><h3 id="modalTitle">Project details</h3><button id="modalClose" aria-label="Close"><i class="fa-solid fa-xmark"></i></button></div>
+    <div id="modalBody"></div>
+  </div>
+</div>
 
+<div class="command" id="command">
+  <div class="command-card glass">
+    <input id="commandInput" type="search" placeholder="Search sections..." autocomplete="off">
+    <div id="commandList">
+      <button data-target="#home">Home <kbd>1</kbd></button>
+      <button data-target="#about">About <kbd>2</kbd></button>
+      <button data-target="#skills">Skills <kbd>3</kbd></button>
+      <button data-target="#projects">Projects <kbd>4</kbd></button>
+      <button data-target="#experience">Experience <kbd>5</kbd></button>
+      <button data-target="#contact">Contact <kbd>6</kbd></button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<button class="back-top" id="backTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script>
+const $=(s,c=document)=>c.querySelector(s);
+const $$=(s,c=document)=>[...c.querySelectorAll(s)];
+const reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const nav=$("#nav");
+const menu=$("#menuBtn");
+const header=$("#header");
+const progress=$("#progress");
+const backTop=$("#backTop");
+const toast=$("#toast");
+
+function toastMessage(text){
+  toast.textContent=text;
+  toast.classList.add("show");
+  clearTimeout(window.toastTimer);
+  window.toastTimer=setTimeout(()=>toast.classList.remove("show"),2600);
+}
+
+menu.addEventListener("click",()=>{
+  const open=nav.classList.toggle("open");
+  menu.setAttribute("aria-expanded",open);
+  menu.innerHTML=open?'<i class="fa-solid fa-xmark"></i>':'<i class="fa-solid fa-bars"></i>';
+});
+
+$$(".nav a").forEach(a=>a.addEventListener("click",()=>{
+  nav.classList.remove("open");
+  menu.setAttribute("aria-expanded","false");
+  menu.innerHTML='<i class="fa-solid fa-bars"></i>';
+}));
+
+function scrollUI(){
+  const max=document.documentElement.scrollHeight-innerHeight;
+  progress.style.width=`${max?scrollY/max*100:0}%`;
+  header.classList.toggle("scrolled",scrollY>30);
+  backTop.classList.toggle("show",scrollY>600);
+}
+addEventListener("scroll",scrollUI,{passive:true});
+scrollUI();
+
+backTop.addEventListener("click",()=>scrollTo({top:0,behavior:reduce?"auto":"smooth"}));
+
+const sectionObserver=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(!e.isIntersecting)return;
+    $$(".nav a").forEach(a=>a.classList.toggle("active",a.getAttribute("href")===`#${e.target.id}`));
+  });
+},{rootMargin:"-30% 0px -55% 0px"});
+$$("main section[id]").forEach(s=>sectionObserver.observe(s));
+
+const revealObserver=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add("visible");
+      revealObserver.unobserve(e.target);
+    }
+  });
+},{threshold:.12});
+$$(".reveal").forEach(e=>revealObserver.observe(e));
+
+const typed=$("#typed");
+const words=["Web Developer","Data Analyst","Python Enthusiast","Insights Explorer"];
+let wordIndex=0,charIndex=0,deleting=false;
+function typing(){
+  if(reduce){typed.textContent=words[0];return;}
+  const word=words[wordIndex];
+  if(!deleting){
+    charIndex++;
+    typed.textContent=word.slice(0,charIndex);
+    if(charIndex===word.length){deleting=true;setTimeout(typing,1300);return;}
+  }else{
+    charIndex--;
+    typed.textContent=word.slice(0,charIndex);
+    if(charIndex===0){deleting=false;wordIndex=(wordIndex+1)%words.length;}
+  }
+  setTimeout(typing,deleting?38:72);
+}
+typing();
+
+function animateCounters(selector){
+  $$(selector).forEach(el=>{
+    const target=Number(el.dataset.count);
+    const display=el.dataset.display;
+    let start=performance.now();
+    function count(now){
+      const p=Math.min(1,(now-start)/1100);
+      const val=Math.floor(target*(1-Math.pow(1-p,3)));
+      el.textContent=display?(p<1?val:display):val;
+      if(p<1)requestAnimationFrame(count);
+    }
+    requestAnimationFrame(count);
+  });
+}
+
+const metricObserver=new IntersectionObserver(entries=>{
+  if(!entries.some(e=>e.isIntersecting))return;
+  animateCounters(".metrics [data-count]");
+  metricObserver.disconnect();
+},{threshold:.3});
+if($(".metrics"))metricObserver.observe($(".metrics"));
+
+const heroStatObserver=new IntersectionObserver(entries=>{
+  if(!entries.some(e=>e.isIntersecting))return;
+  animateCounters(".hero-stats [data-count]");
+  heroStatObserver.disconnect();
+},{threshold:.3});
+if($(".hero-stats"))heroStatObserver.observe($(".hero-stats"));
+
+const filters=$$(".filter");
+const items=$$(".project-item");
+const count=$("#projectCount");
+filters.forEach(button=>button.addEventListener("click",()=>{
+  filters.forEach(b=>b.classList.remove("active"));
+  button.classList.add("active");
+  const filter=button.dataset.filter;
+  let visible=0;
+  items.forEach(item=>{
+    const show=filter==="all"||item.dataset.category===filter;
+    item.classList.toggle("hidden",!show);
+    if(show)visible++;
+  });
+  count.textContent=`${visible} project${visible===1?"":"s"}`;
+}));
+
+const projectData={
+  portfolio:{title:"Yuvii Portfolio",html:"<p>Modern responsive portfolio combining animated frontend engineering with a dedicated data analytics showcase.</p><ul><li>HTML5, CSS3 and vanilla JavaScript.</li><li>Interactive filters, counters and scroll animations.</li><li>GitHub Pages compatible architecture.</li></ul>"},
+  weather:{title:"Weather App",html:"<p>JavaScript practice project focused on API data and asynchronous UI states.</p><ul><li>API and async concepts.</li><li>Loading and result states.</li><li>Responsive UI practice.</li></ul>"},
+  todo:{title:"To-Do List",html:"<p>Focused JavaScript CRUD project for managing tasks and practicing browser-side state.</p><ul><li>Create, complete and remove tasks.</li><li>LocalStorage persistence.</li><li>Task filtering.</li></ul>"},
+  hr:{title:"HR Employee Attrition Analysis",html:"<p>HR analytics project that analyzes employee attrition and turns workforce data into business-focused insights.</p><ul><li>Data cleaning and preprocessing.</li><li>Department, job role, overtime and salary analysis.</li><li>Python, Pandas, Matplotlib and Jupyter Notebook.</li><li>Summary data and analytical charts.</li></ul><p><a href=\"https://github.com/yuvii12/HR_Employee_Attrition_Analyasis\" target=\"_blank\">Open GitHub repository →</a></p>"},
+  realestate:{title:"Real Estate Price Prediction",html:"<p>Supervised machine learning project that predicts residential property prices using Linear Regression.</p><ul><li>Feature engineering.</li><li>Train/test workflow.</li><li>MAE, RMSE, R² and 5-fold cross-validation.</li><li>Prediction results exported to CSV.</li></ul><p><a href=\"https://github.com/yuvii12/RealEstatePricePrediction\" target=\"_blank\">Open GitHub repository →</a></p>"},
+  student:{title:"Student Result Analysis",html:"<p>Student performance analysis using Python, Pandas, Matplotlib and Excel-oriented data handling.</p><ul><li>Total and average marks.</li><li>Highest and lowest scores.</li><li>Student-wise and subject-wise performance.</li><li>Pass/fail analysis and bar charts.</li></ul><p><a href=\"https://github.com/yuvii12/Student-Result-Analysis\" target=\"_blank\">Open GitHub repository →</a></p>"}
+};
+const modal=$("#modal");
+const modalTitle=$("#modalTitle");
+const modalBody=$("#modalBody");
+$$(".details").forEach(button=>button.addEventListener("click",()=>{
+  const data=projectData[button.dataset.project];
+  modalTitle.textContent=data.title;
+  modalBody.innerHTML=data.html;
+  modal.classList.add("open");
+  document.body.style.overflow="hidden";
+}));
+function closeModal(){
+  modal.classList.remove("open");
+  document.body.style.overflow="";
+}
+$("#modalClose").addEventListener("click",closeModal);
+modal.addEventListener("click",e=>{if(e.target===modal)closeModal();});
+
+const command=$("#command");
+const commandBtn=$("#commandBtn");
+const commandInput=$("#commandInput");
+function openCommand(){command.classList.add("open");commandInput.value="";commandInput.focus();}
+function closeCommand(){command.classList.remove("open");}
+commandBtn.addEventListener("click",openCommand);
+command.addEventListener("click",e=>{if(e.target===command)closeCommand();});
+$$("[data-target]",command).forEach(button=>button.addEventListener("click",()=>{
+  const target=document.querySelector(button.dataset.target);
+  closeCommand();
+  target?.scrollIntoView({behavior:reduce?"auto":"smooth"});
+}));
+commandInput.addEventListener("input",()=>{
+  const q=commandInput.value.toLowerCase();
+  $$("[data-target]",command).forEach(b=>b.hidden=!b.textContent.toLowerCase().includes(q));
+});
+
+document.addEventListener("keydown",e=>{
+  if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==="k"){e.preventDefault();openCommand();}
+  if(e.key==="Escape"){closeCommand();closeModal();}
+});
+
+$$(".placeholder-link").forEach(a=>a.addEventListener("click",e=>{
+  e.preventDefault();
+  toastMessage("This link is a placeholder. Add your live URL when ready.");
+}));
+
+$("#contactForm").addEventListener("submit",()=>{
+  $("#formStatus").textContent="Sending your message…";
+  const button=$("#contactForm button");
+  button.disabled=true;
+  button.innerHTML='<i class="fa-solid fa-spinner fa-spin"></i> Sending…';
+});
+
+$("#year").textContent=new Date().getFullYear();
+
+if(!reduce){
+  const canvas=$("#particles");
+  const ctx=canvas.getContext("2d");
+  let particles=[];
+  function resize(){
+    const ratio=Math.min(devicePixelRatio||1,2);
+    canvas.width=innerWidth*ratio;
+    canvas.height=innerHeight*ratio;
+    canvas.style.width=innerWidth+"px";
+    canvas.style.height=innerHeight+"px";
+    ctx.setTransform(ratio,0,0,ratio,0,0);
+    particles=Array.from({length:65},()=>({
+      x:Math.random()*innerWidth,
+      y:Math.random()*innerHeight,
+      vx:(Math.random()-.5)*.22,
+      vy:(Math.random()-.5)*.22,
+      r:Math.random()*1.5+.4
+    }));
+  }
+  function draw(){
+    ctx.clearRect(0,0,innerWidth,innerHeight);
+    particles.forEach(p=>{
+      p.x+=p.vx;p.y+=p.vy;
+      if(p.x<0)p.x=innerWidth;
+      if(p.x>innerWidth)p.x=0;
+      if(p.y<0)p.y=innerHeight;
+      if(p.y>innerHeight)p.y=0;
+      ctx.beginPath();
+      ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+      ctx.fillStyle="rgba(148,163,184,.35)";
+      ctx.fill();
+    });
+    for(let i=0;i<particles.length;i++){
+      for(let j=i+1;j<particles.length;j++){
+        const a=particles[i],b=particles[j];
+        const dx=a.x-b.x,dy=a.y-b.y,d=Math.hypot(dx,dy);
+        if(d<105){
+          ctx.strokeStyle=`rgba(103,232,249,${(1-d/105)*.08})`;
+          ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.stroke();
+        }
+      }
+    }
+    requestAnimationFrame(draw);
+  }
+  addEventListener("resize",resize);
+  resize();
+  draw();
+}
+
+if(!reduce){
+  addEventListener("pointermove",e=>{
+    const x=(e.clientX/innerWidth-.5)*2;
+    const y=(e.clientY/innerHeight-.5)*2;
+    $(".orb-a").style.transform=`translate(${x*20}px,${y*20}px)`;
+    $(".orb-b").style.transform=`translate(${-x*22}px,${-y*22}px)`;
+    $("#profileCard").style.transform=`perspective(900px) rotateY(${x*3}deg) rotateX(${y*-3}deg)`;
+  },{passive:true});
+}
+
+$$('a[href^="#"]').forEach(a=>a.addEventListener("click",e=>{
+  const target=document.querySelector(a.getAttribute("href"));
+  if(target){e.preventDefault();target.scrollIntoView({behavior:reduce?"auto":"smooth"});}
+}));
+
+console.log("%cYuvii Portfolio%c — HTML + CSS + JavaScript","color:#67e8f9;font-weight:800","color:#94a3b8");
+</script>
 </body>
 </html>

@@ -1,98 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Certificates | Yuvraj Dixit</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #0e0b0b;
-      padding: 20px;
-      text-align: center;
-    }
-    h1 {
-      margin-bottom: 30px;
-    }
-    .certificates-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
-      justify-items: center;
-      padding: 20px;
-    }
-    .certificate {
-      background: rgb(192, 184, 184);
-      padding: 15px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
-    }
-    .certificate img {
-      width: 100%;
-      border-radius: 8px;
-    }
-    .certificate:hover {
-      transform: scale(1.03);
-    }
-    .certificate-title {
-      margin-top: 10px;
-      font-weight: bold;
-      font-size: 18px;
-    }
-    .certificate a {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  background: #3131be;
-  color: rgb(255, 255, 255);
-  border-radius: 20px;
-  text-decoration: none;
-  transition: background 0.3s ease;
-}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Yuvraj Dixit certifications and learning experiences.">
+<title>Certifications | Yuvraj Dixit</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+body{min-height:100vh;background:radial-gradient(circle at 85% 15%,rgba(6,182,212,.14),transparent 28%),#050816}
+.cert-page{padding:130px 20px 80px}.cert-shell{max-width:1200px;margin:auto}
+.cert-top{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:45px}
+.cert-title{font-family:"Space Grotesk";font-size:clamp(42px,7vw,72px);line-height:.95;letter-spacing:-.06em}.cert-title span{color:#a3e635}.cert-sub{color:#94a3b8;margin-top:12px}.cert-back{padding:11px 15px;border:1px solid var(--line);border-radius:12px;text-decoration:none;color:#cbd5e1;background:rgba(255,255,255,.03)}
+.cert-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.cert{overflow:hidden;border-radius:22px;transition:.3s}.cert:hover{transform:translateY(-8px);border-color:rgba(103,232,249,.3)}.cert img{display:block;width:100%;aspect-ratio:1.42;object-fit:cover;background:#111827}.cert-body{padding:19px}.cert-body h2{font-family:"Space Grotesk";font-size:17px}.cert-body p{margin-top:7px;color:#94a3b8;font-size:11px;line-height:1.6}.cert-body a{display:inline-flex;margin-top:14px;padding:9px 11px;border-radius:10px;background:rgba(255,255,255,.05);text-decoration:none;color:#fff;font-size:10px;font-weight:800}.cert-body a:hover{background:rgba(124,58,237,.18)}
+@media(max-width:900px){.cert-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:600px){.cert-top{align-items:flex-start;flex-direction:column}.cert-grid{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
-  <h1>📜 My Certifications</h1>
-
-  <div class="certificates-container">
-     <div class="certificate">
-      <img src="images/udemy.png" alt="Deloitte Data Analytics Simulation Certificate" />
-      <div class="certificate-title">Udamy- Web Development Course</div>
-       <a href="https://www.linkedin.com/feed/update/urn:li:share:7370138357496176640//" target="_blank">Viwe post on linkedin</a>
-    </div>
-
-     <div class="certificate">
-      <img src="images/codsoft.png" alt="Deloitte Data Analytics Simulation Certificate" />
-      <div class="certificate-title">Web Development Intern – codsoft </div>
-       <a href="https://www.linkedin.com/feed/update/urn:li:activity:7363414410507288576/" target="_blank">Viwe post on linkedin</a>
-    </div>
-    <div class="certificate">
-      <img src="images/eleventlab.png" alt="Deloitte Data Analytics Simulation Certificate" />
-      <div class="certificate-title">Web Development Intern – Elevate Labs </div>
-       <a href="https://www.linkedin.com/feed/update/urn:li:activity:7364499072923095040/" target="_blank">Viwe post on linkedin</a>
-    </div>
-    <div class="certificate">
-      <img src="images/accenture.jpg" alt="Accenture Software Engineering Job Simulation Certificate" />
-      <div class="certificate-title">Accenture - Software Engineering Job Simulation</div>
-       <a href="https://www.linkedin.com/feed/update/urn:li:activity:7346726953825058816/" target="_blank">Viwe post on linkedin</a>
-    </div>
-    <div class="certificate">
-      <img src="images/deloitte.png" alt="Deloitte Data Analytics Simulation Certificate" />
-      <div class="certificate-title">Deloitte - Data Analytics Simulation</div>
-       <a href="https://www.linkedin.com/feed/update/urn:li:activity:7347814116872318976/" target="_blank">Viwe post on linkedin</a>
-    </div>
-    <div class="certificate">
-      <img src="images/lets.png" alt="HTML & CSS Bootcamp (LetsUpgrade + NSDC) " />
-      <div class="certificate-title"> HTML & CSS Bootcamp (LetsUpgrade + NSDC) </div>
-       <a href="https://yuvii12.github.io/Portfolio-website/" target="_blank">Viwe post on linkedin</a>
-    </div>
-    <div class="certificate">
-  <img src="images/cert4.png" alt="AWS Solutions Architecture Certificate" />
-  <div class="certificate-title">AWS - Solutions Architecture Job Simulation (2025)</div>
-   <a href="https://yuvii12.github.io/Portfolio-website/" target="_blank">Viwe post on linkedin</a>
+<main class="cert-page">
+<div class="cert-shell">
+<div class="cert-top">
+<div><h1 class="cert-title">My <span>Certifications.</span></h1><p class="cert-sub">Web development and data analytics learning milestones, simulations and professional practice.</p></div>
+<a class="cert-back" href="index.html"><i class="fa-solid fa-arrow-left"></i> Back to Portfolio</a>
 </div>
-
-  </div>
+<div class="cert-grid">
+<article class="glass cert"><img src="images/udemy.png" alt="Udemy — Web Development Course" loading="lazy"><div class="cert-body"><h2>Udemy — Web Development Course</h2><p>Web development learning milestone.</p><a href="https://www.linkedin.com/feed/update/urn:li:share:7370138357496176640/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i>&nbsp; View related link</a></div></article>
+<article class="glass cert"><img src="images/codsoft.png" alt="Web Development Intern — CodSoft" loading="lazy"><div class="cert-body"><h2>Web Development Intern — CodSoft</h2><p>Practical web development internship experience.</p><a href="https://www.linkedin.com/feed/update/urn:li:activity:7363414410507288576/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i>&nbsp; View related link</a></div></article>
+<article class="glass cert"><img src="images/eleventlab.png" alt="Web Development Intern — Elevate Labs" loading="lazy"><div class="cert-body"><h2>Web Development Intern — Elevate Labs</h2><p>Practical web development learning experience.</p><a href="https://www.linkedin.com/feed/update/urn:li:activity:7364499072923095040/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i>&nbsp; View related link</a></div></article>
+<article class="glass cert"><img src="images/accenture.jpg" alt="Accenture — Software Engineering Simulation" loading="lazy"><div class="cert-body"><h2>Accenture — Software Engineering Simulation</h2><p>Software engineering job simulation.</p><a href="https://www.linkedin.com/feed/update/urn:li:activity:7346726953825058816/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i>&nbsp; View related link</a></div></article>
+<article class="glass cert"><img src="images/deloitte.png" alt="Deloitte — Data Analytics Simulation" loading="lazy"><div class="cert-body"><h2>Deloitte — Data Analytics Simulation</h2><p>Data analytics job simulation.</p><a href="https://www.linkedin.com/feed/update/urn:li:activity:7347814116872318976/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i>&nbsp; View related link</a></div></article>
+<article class="glass cert"><img src="images/lets.png" alt="HTML & CSS Bootcamp — LetsUpgrade + NSDC" loading="lazy"><div class="cert-body"><h2>HTML & CSS Bootcamp — LetsUpgrade + NSDC</h2><p>HTML and CSS focused learning experience.</p><a href="https://yuvii12.github.io/Portfolio-website/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i>&nbsp; View related link</a></div></article>
+<article class="glass cert"><img src="images/cert4.png" alt="AWS — Solutions Architecture Simulation" loading="lazy"><div class="cert-body"><h2>AWS — Solutions Architecture Simulation</h2><p>AWS solutions architecture job simulation.</p><a href="https://yuvii12.github.io/Portfolio-website/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i>&nbsp; View related link</a></div></article>
+</div>
+</div>
+</main>
 </body>
 </html>
