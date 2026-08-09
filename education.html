@@ -1,151 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Education Journey</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(to right, #01022d, #000);
-    }
-
-    .education-section {
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    .section-title {
-      font-size: 2.5rem;
-      color: #222;
-      position: relative;
-      margin-bottom: 10px;
-      color: #fff;
-    }
-
-    .section-subtitle {
-      font-size: 1.1rem;
-      color: #555;
-      margin-bottom: 40px;
-      color: #fff;
-    }
-
-    .timeline {
-      position: relative;
-      max-width: 800px;
-      margin: 0 auto;
-      padding-left: 40px;
-      text-align: left;
-    }
-
-    .timeline::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 28px;
-      width: 4px;
-      height: 100%;
-      background-color: #007acc;
-      border-radius: 2px;
-    }
-
-    .edu-card {
-      position: relative;
-      background: #fff;
-      margin: 30px 0;
-      padding: 25px 30px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-      border-radius: 8px;
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeInUp 0.6s forwards;
-    }
-
-    .edu-card:nth-child(1) { animation-delay: 0.1s; }
-    .edu-card:nth-child(2) { animation-delay: 0.3s; }
-    .edu-card:nth-child(3) { animation-delay: 0.5s; }
-
-    .edu-card::before {
-      content: "🎓";
-      position: absolute;
-      left: -3.5rem;
-      top: 20px;
-      font-size: 1.5rem;
-      background-color: #fff;
-      border: 3px solid #007acc;
-      border-radius: 50%;
-      width: 40px;
-      height: 40px;
-      line-height: 34px;
-      text-align: center;
-      color: #007acc;
-      z-index: 2;
-    }
-
-    .edu-card.current::before {
-      content: "💻";
-      border-color: #f39c12;
-      color: #f39c12;
-    }
-
-    .edu-card.future::before {
-      content: "🚀";
-      border-color: #27ae60;
-      color: #27ae60;
-    }
-
-    .edu-card h3 {
-      font-size: 1.5rem;
-      color: #007acc;
-      margin-bottom: 10px;
-    }
-
-    .edu-card p {
-      font-size: 1rem;
-      color: #444;
-      margin: 5px 0;
-    }
-
-    .edu-year {
-      font-style: italic;
-      color: #666;
-    }
-
-    @keyframes fadeInUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Yuvraj Dixit education journey.">
+<title>Education | Yuvraj Dixit</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+body{min-height:100vh;background:radial-gradient(circle at 20% 10%,rgba(124,58,237,.18),transparent 30%),#050816}
+.edu-page{min-height:100vh;padding:130px 20px 80px}
+.edu-shell{max-width:980px;margin:auto}
+.edu-top{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:55px}
+.edu-title{font-family:"Space Grotesk";font-size:clamp(42px,7vw,72px);line-height:.95;letter-spacing:-.06em}
+.edu-title span{color:#67e8f9}.edu-sub{color:#94a3b8;margin-top:14px}
+.edu-back{padding:11px 15px;border:1px solid var(--line);border-radius:12px;text-decoration:none;color:#cbd5e1;background:rgba(255,255,255,.03)}
+.edu-timeline{position:relative}.edu-timeline:before{content:"";position:absolute;left:24px;top:0;bottom:0;width:1px;background:linear-gradient(#7c3aed,#06b6d4,transparent)}
+.edu-card{position:relative;margin:0 0 22px 70px;padding:28px;border-radius:23px}
+.edu-dot{position:absolute;left:-54px;top:26px;width:17px;height:17px;border:4px solid #050816;border-radius:50%;background:#67e8f9;box-shadow:0 0 20px #67e8f9}
+.edu-card h2{font-family:"Space Grotesk";font-size:25px}.edu-card .year{display:inline-block;margin-top:8px;color:#67e8f9;font-size:11px;font-weight:800}.edu-card p{margin-top:10px;color:#94a3b8;line-height:1.8}.edu-card ul{margin:13px 0 0 18px;color:#94a3b8;line-height:1.8}
+@media(max-width:650px){.edu-page{padding-top:110px}.edu-top{align-items:flex-start;flex-direction:column}.edu-card{margin-left:48px;padding:22px}.edu-timeline:before{left:15px}.edu-dot{left:-41px}}
+</style>
 </head>
 <body>
-  <section id="education" class="education-section">
-    <h1 class="section-title">📘 My Education </h1>
-    <h2 class="section-subtitle"> Yuvraj Dixit (Aspirant DevOps Engineer  🚀)</h2>
-
-    <div class="timeline">
-      <div class="edu-card">
-        <h3>10th Standard</h3>
-        <p><strong>Board:</strong> Bihar School Examination Board (BSEB)</p>
-        <p><strong>Location:</strong> Gopalganj,Bihar, India</p>
-        <p class="edu-year">🎓 Completed</p>
-      </div>
-
-      <div class="edu-card current">
-        <h3>Diploma in Computer Science</h3>
-        <p><strong>Institute:</strong> IIMT university Greater Noida</p>
-        <p><strong>Status:</strong> Final Year (Pursuing)</p>
-        <p class="edu-year">📅 2023 - 2026 (Expected)</p>
-      </div>
-
-      <div class="edu-card future">
-        <h3>Future Goal: DevOps Engineer</h3>
-        <p>I am deeply passionate about automation, CI/CD pipelines, cloud platforms & scalable systems.</p>
-        <p class="edu-year">🚀 Next Step: DevOps Mastery</p>
-      </div>
-    </div>
-  </section>
+<main class="edu-page">
+<div class="edu-shell">
+<div class="edu-top">
+<div><h1 class="edu-title">My <span>Education</span><br>Journey.</h1><p class="edu-sub">Yuvraj Dixit • Web Developer &amp; Aspiring Data Analyst 📊</p></div>
+<a class="edu-back" href="index.html"><i class="fa-solid fa-arrow-left"></i> Back to Portfolio</a>
+</div>
+<div class="edu-timeline">
+<article class="glass edu-card"><span class="edu-dot"></span><h2>10th Standard</h2><span class="year">COMPLETED</span><p><strong>Board:</strong> Bihar School Examination Board (BSEB)</p><p><strong>Location:</strong> Gopalganj, Bihar, India</p></article>
+<article class="glass edu-card"><span class="edu-dot"></span><h2>Diploma in Computer Science</h2><span class="year">2023 — 2026 • FINAL YEAR</span><p><strong>Institute:</strong> IIMT University, Greater Noida</p><p>Focused on computer science foundations, programming and practical technology skills.</p></article>
+<article class="glass edu-card"><span class="edu-dot"></span><h2>Future Goal: Data Analyst</h2><span class="year">NEXT STEP 🚀</span><p>Deepening practical knowledge in data cleaning, statistical analysis, dashboards and business-focused insight generation.</p><ul><li>Python for data analysis</li><li>SQL &amp; database querying</li><li>Power BI dashboards</li><li>Data visualization &amp; storytelling</li></ul></article>
+</div>
+</div>
+</main>
 </body>
 </html>
